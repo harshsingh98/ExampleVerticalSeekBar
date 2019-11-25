@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity">
+
+   <!-- <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:max="50"
+        android:progress="5"
+        android:thumb="@drawable/ic_brightness_auto_black_24dp"
+        android:rotation="270"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        />-->
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp350"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dp5"
+        android:layout_height="@dimen/dp350"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_bar_theme"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/relFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imgFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness_1_black_24dp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/relThree"
+            android:layout_marginBottom="@dimen/dp65">
+
+        <ImageView
+            android:id="@+id/imgFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness_1_black_24dp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/imgThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness_1_black_24dp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/relOne"
+            android:layout_marginBottom="@dimen/dp65">
+
+        <ImageView
+            android:id="@+id/imgTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness_1_black_24dp"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imgOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_brightness_1_black_24dp"
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_click_me"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp16"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="@dimen/dp20"/>
+
+</RelativeLayout>
